@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".TemActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="150dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="123dp"
+            android:background="@drawable/btnhome"/>
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/Temtext"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="180dp"
+        android:hint="온도를 입력해주세요."
+        android:textColorHint="#504949"
+        android:textColor="#000000"
+        android:inputType="text"/>
+
+
+    <EditText
+        android:id="@+id/Moitext"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:hint="습도를 입력해주세요"
+        android:textColorHint="#504949"
+        android:textColor="#000000"
+        android:inputType="text"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center">
+
+        <ImageButton
+            android:id="@+id/sendmain"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="60dp"/>
+
+        <ImageButton
+            android:id="@+id/temmain"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="100dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

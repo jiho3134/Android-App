@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainactivi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/mnuopen"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="68dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="75dp"
+                    android:background="@drawable/btnhome"/>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/Temreceive"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="150dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#020000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reMsg"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="280dp"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <ImageButton
+                    android:id="@+id/temactivity"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+
+                    android:layout_margin="5dp"/>
+
+                <ImageButton
+                    android:id="@+id/asdf"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"/>
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"/>
+
+                <ImageButton
+                    android:id="@+id/btncctv"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <include layout="@layout/drawer"/>
+</androidx.drawerlayout.widget.DrawerLayout>

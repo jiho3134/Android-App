@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.my">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="recreat"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.NoActionBar">
+        <service
+            android:name=".NotiService"
+            android:enabled="true"
+            android:exported="true"></service>
+        <service
+            android:name=".TcpService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".MemoAddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MemoMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CctvActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
